@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Quest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="1stpage" class = "pageStarter"> 
+        <h1 style="font-family: algerian">Welcome to Card Quest</h1>
+        <div class="menu">
+            <p class = "Mytext">Menu</p>
+            <button class="btn" id="Startgame">Start Game</button>
+            <button class="btn" id="help">Help</button>
+            <button class="btn" id="Credits">Credits</button>
+
+        </div>
+    </div>
+
+
+    <!-- The Modal (hidden by default) -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Credits</h2>
+        <p>This game was designed and developed by Firas Jmii and Yesmeen Chakroun. <br> 
+            A special thanks goes to cs members for their opportunity and <br>
+            support throughout the development process.<br>
+            We hope you enjoy the game!</p>
+        
+        </div>
+  
+    </div>
+
+
+     <!-- The Modal (hidden by default) -->
+    <div id="myModal1" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+        <span class="close1">&times;</span>
+        <h2>Help</h2>
+        <p>
+            The player must match pairs of cards by flipping them over.<br>
+            The goal is to find all the pairs with the fewest possible mistakes!<br>
+            in order to flip the cards, the player must use the mouse.<br>
+            Avoid obstacles and try your best to win!
+        </p>
+        
+        </div>
+    </div>
+
+
+
+    <!--div hidden by default-->
+    <div id="animation1" class="anim1">
+        <p class="Mytext1">what is this place?</p>
+        <div class="grid-container1">
+            <div class="grid-item1 Dbtn">
+                <button class="dbtn" id="door"> </button>
+            </div> 
+        </div>
+    </div>
+
+    <!--div hidden by default-->
+    <div id="animation2" class="anim2">
+        <p class="Mytext2">how dare you trespass into thy castle , now you must accomplish this card quest or you will be trapped here for all eternity.</p>
+        <button class="clickanywhere" id="anywhere"> </button>
+    </div>
+
+
+
+    <!--div hidden by default-->
+    <div id ="divG" class="divGame">
+        <!-- Dark overlay for light effect -->
+        <div class="dark-overlay"></div>
+        <div class="light" id="light-circle"></div>
+        <div class="grid-container">
+            <div class="grid-item" data-card="1">
+                <div class="front"><img src="assets/cardback.jpg" class="front" alt="backside"></div>
+                <div class="back"><img src="assets/card 1.jpg" alt="Card 1"></div>
+            </div>
+            <div class="grid-item" data-card="2">
+                <div class="front"><img src="assets/cardback.jpg" alt="backside"></div>
+                <div class="back"><img src="assets/card 2.jpg" alt="Card 2"></div>
+            </div>
+            <div class="grid-item" data-card="3">
+                <div class="front"><img src="assets/cardback.jpg" alt="backside"></div>
+                <div class="back"><img src="assets/card 3.jpg" alt="Card 3"></div>
+            </div>
+            <div class="grid-item" data-card="4">
+                <div class="front"><img src="assets/cardback.jpg" alt="backside"></div>
+                <div class="back"><img src="assets/card 4.jpg" alt="Card 4"></div>
+            </div>
+            <div class="grid-item" data-card="5">
+                <div class="front"><img src="assets/cardback.jpg" alt="backside"></div>
+                <div class="back"><img src="assets/card 5.jpg" alt="Card 5"></div>
+            </div>
+            <div class="grid-item" data-card="6">
+                <div class="front"><img src="assets/cardback.jpg" alt="backside"></div>
+                <div class="back"><img src="assets/card 6.jpg" alt="Card 6"></div>
+            </div>
+            <div class="grid-item" data-card="7">
+                <div class="front"><img src="assets/cardback.jpg" alt="backside"></div>
+                <div class="back"><img src="assets/card 7.jpg" alt="Card 7"></div>
+            </div>
+            <div class="grid-item" data-card="8">
+                <div class="front"><img src="assets/cardback.jpg" alt="backside"></div>
+                <div class="back"><img src="assets/card 8.jpg" alt="Card 8"></div>
+            </div>
+            <div class="grid-item" data-card="9">
+                <div class="front"><img src="assets/cardback.jpg" alt="backside"></div>
+                <div class="back"><img src="assets/card 9.jpg" alt="Card 9"></div>
+            </div>
+            <div class="grid-item" data-card="10">
+                <div class="front"><img src="assets/cardback.jpg" alt="backside"></div>
+                <div class="back"><img src="assets/card 10.jpg" alt="Card 10"></div>
+            </div>
+            <div class="grid-item" data-card="1">
+                <div class="front"><img src="assets/cardback.jpg" class="front" alt="backside"></div>
+                <div class="back"><img src="assets/card 1.jpg" alt="Card 1"></div>
+            </div>
+            <div class="grid-item" data-card="2">
+                <div class="front"><img src="assets/cardback.jpg" alt="backside"></div>
+                <div class="back"><img src="assets/card 2.jpg" alt="Card 2"></div>
+            </div>
+            <div class="grid-item" data-card="3">
+                <div class="front"><img src="assets/cardback.jpg" alt="backside"></div>
+                <div class="back"><img src="assets/card 3.jpg" alt="Card 3"></div>
+            </div>
+            <div class="grid-item" data-card="4">
+                <div class="front"><img src="assets/cardback.jpg" alt="backside"></div>
+                <div class="back"><img src="assets/card 4.jpg" alt="Card 4"></div>
+            </div>
+            <div class="grid-item" data-card="5">
+                <div class="front"><img src="assets/cardback.jpg" alt="backside"></div>
+                <div class="back"><img src="assets/card 5.jpg" alt="Card 5"></div>
+            </div>
+            <div class="grid-item" data-card="6">
+                <div class="front"><img src="assets/cardback.jpg" alt="backside"></div>
+                <div class="back"><img src="assets/card 6.jpg" alt="Card 6"></div>
+            </div>
+            <div class="grid-item" data-card="7">
+                <div class="front"><img src="assets/cardback.jpg" alt="backside"></div>
+                <div class="back"><img src="assets/card 7.jpg" alt="Card 7"></div>
+            </div>
+            <div class="grid-item" data-card="8">
+                <div class="front"><img src="assets/cardback.jpg" alt="backside"></div>
+                <div class="back"><img src="assets/card 8.jpg" alt="Card 8"></div>
+            </div>
+            <div class="grid-item" data-card="9">
+                <div class="front"><img src="assets/cardback.jpg" alt="backside"></div>
+                <div class="back"><img src="assets/card 9.jpg" alt="Card 9"></div>
+            </div>
+            <div class="grid-item" data-card="10">
+                <div class="front"><img src="assets/cardback.jpg" alt="backside"></div>
+                <div class="back"><img src="assets/card 10.jpg" alt="Card 10"></div>
+            </div>
+        </div>
+        
+
+
+    </div>
+
+
+    
+    <!--div hidden by default-->
+    <div id="finale" class="finale">
+        <p class="Mytext3">next time I will not be so merciful ,<br>
+            and you will pay with your life for your insolence,<br>
+            but for the time being do not ever show your face again in my castle.</p>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
